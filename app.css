@@ -195,6 +195,7 @@ p {
   width: 100%;
   padding: 0 15px;
   min-height: 290px;
+  overflow: hidden;
 }
 .image-modal-swiper-slide img {
   width: 100%;
@@ -211,6 +212,9 @@ p {
 .image-modal-next {
   display: none !important;
   outline: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .image-modal-prev {
   background-image: url("./images/slider-left-arrow.svg");
@@ -282,7 +286,7 @@ p {
 
 @media (min-width: 1200px) {
   .image-modal-slider .image-modal-swiper-container {
-    height: 700px;
+    height: 770px;
     max-width: 1030px;
   }
   .image-modal-container {
@@ -291,12 +295,13 @@ p {
   }
   .image-modal-slider {
     max-width: 1150px;
-    margin: 100px auto 120px auto;
-    height: 700px;
+    margin: auto;
+    height: 770px;
   }
   .image-modal-swiper-wrapper {
     max-width: 1030px;
-    max-height: 600px;
+    max-height: 686px;
+    margin-top: 30px;
   }
 }
 
@@ -305,5 +310,4 @@ p {
     align-items: center;
     justify-content: center;
   }
-
 }
